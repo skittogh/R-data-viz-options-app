@@ -1,0 +1,339 @@
+* {
+    font-family: Arial !important;
+}
+
+
+svg[Attributes Style] {
+    padding-bottom: 30px;
+}
+
+
+/* padding around logos */
+img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*centre logos and flex - wrap*/
+div#logo_col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+  
+  
+/* wellpanel formatting */
+div#well1.well {
+   background: #414043;
+   border-radius: 7px;
+   border-bottom-color:#ebeef2;
+   border-left-color:#ebeef2;
+   border-right-color:#ebeef2;
+   border-top-color:#ebeef2;
+   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  }
+  
+  /* wellpanel formatting */
+div#well2.well {
+   background: #414043;
+   border-radius: 7px;
+   border-bottom-color:#ebeef2;
+   border-left-color:#ebeef2;
+   border-right-color:#ebeef2;
+   border-top-color:#ebeef2;
+   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  }
+
+
+
+
+label {
+    color: #fff;
+}
+
+
+/* set format of primary header */
+h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 10px;
+    z-index:1 !important;
+}
+
+/* set color of headers */
+h2, h5 {
+    color: #402F68;
+    margin-bottom: 0px !important;
+}
+
+
+body {
+    background-color: #edf6ff;
+}
+
+/* push up sub-tab header row to meet top headers row, and remove left/right padding too 
+div.tabbable > ul.nav.nav-tabs {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}*/
+
+
+
+
+/* set color and height of navbar */
+ul.nav.nav-tabs {
+    /*border-bottom: 3px solid #30A1AC;*/
+    background-color: #1A2145;
+    min-height: 40px;
+}
+
+.nav-tabs .dropdown-menu {
+    z-index: 999999;
+    background: white; 
+}
+
+.dropdown-menu>.active>a:hover {
+    color: #77669E !important;
+}
+
+
+
+h3#nav_title2 {
+    margin-top: 0px;
+    margin-bottom: 3px;
+    background-color: transparent;
+    color: #1A2145;
+}
+
+.nav-tabs-custom > .nav-tabs > li.active > a,
+.nav-tabs > li.active > a {
+    border-bottom: none; 
+    border-top-right-radius: 15px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    color: #402F68 !important;
+    /*color: red !important;*/
+    /*background-image: linear-gradient(#ecfafb, white, white);*/
+    /*background-image: linear-gradient(#15284C, white, white, white, white, white, white, white);*/
+}
+
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+}
+
+/* remove sliver of top margin from tabs */
+.nav-tabs-custom > .nav-tabs > li {
+    border-top: 0px solid transparent; 
+   /* margin-bottom: -3px;*/
+}
+
+
+/* style nav-tabs to be same as the box tabs */
+.nav-tabs > li.active {
+    /*border-bottom: 4px solid #30A1AC;*/
+    /*margin-bottom: -3px;*/
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.nav-tabs > li.active > a {
+    /*border-radius: initial;*/
+    border: none !important;
+    margin: 0;
+    min-height: 40px;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+    color: #77669E !important;
+    /*color: red !important;*/
+}
+
+.nav-tabs > li > a {
+    color: white !important;
+    /*color: darkblue !important;*/
+    border: none;
+}
+
+#secondary_box.nav.nav-tabs > li > a {
+    /*color: white !important;*/
+    color: darkblue !important;
+    border: none;
+    font-style: italic;
+}
+
+#secondary_box.nav.nav-tabs > li.active > a {
+    background-color: transparent;
+    /*color: #77669E !important;*/
+    /*color: red !important;*/
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#secondary_box.nav.nav-tabs > li > a:hover {
+    background-color: transparent;
+    /*color: #77669E !important;*/
+    color: purple !important;
+}
+
+  /* secondary nav tabs formatting*/
+#secondary_box.nav.nav-tabs {
+    /*background-color: #484799;*/
+    background-color: #fff;
+    max-height: 30px;
+}
+
+
+
+/* center row items (graphs + table) in graphs page, and footer 
+#centered-row {
+    display: flex;
+    align-items: center;
+}*/
+
+/* pad dropdown menus */
+#inline-dropdown {
+    padding: 10px;
+}
+
+
+
+/* float left app title */
+div.box-body > h2 {
+    float: left;
+}
+
+/* float right any images in title box */
+div.box-body > a > img {
+    float: right;
+}
+
+/* low z index for box body so that any additional text or images will be rendered overtop */
+div#title_box.box-body > a {
+    margin-right: 10px;
+    z-index:1000 !important;
+}
+
+/* change the padding of the title box only so that svg pattern aligns well */
+div#title_box.box-body {
+    min-height: 150px; 
+    align-items: center;
+    padding: 0px;
+    padding-left: 0px;
+}
+
+
+
+/* add padding between selectInputs */
+.selectize-control {
+    padding-right: 10px;
+}
+
+
+/* ensure that the h1 and images in title box are on the same line if there's space */
+#title_box {
+    display: flex;
+    flex-direction: row;
+}
+
+/* essentially push the logo to the right 
+#title_logo {
+    margin-left: auto;
+}*/
+
+/* vertically center the navbar titles */
+h3#nav_title {
+    margin-top: 0px;
+  /*  margin-bottom: 10px;*/
+}
+
+/* set consistent margins for boxes */
+.box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* same idea for main tabBox */
+.nav-tabs-custom {
+    margin-bottom: 0px;
+}
+#primary_box > li.dropdown > a {
+    display: flex;
+    align-items: center;
+}
+
+.box.box-primary {
+    border-top: none;
+}
+
+/*font size in colour picker boxes*/
+.form-control.shiny-colour-input.colourpicker-input.shiny-bound-input {
+  font-size: 11px;
+}
+
+/*layout of the title and the copy to clipboard button in the colourpicker page*/
+div#title_button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*style the 'Use palette' button in the colourpicker page*/
+#colourpicker-copy_pal {
+    font-size: 14px;
+    width: 100px;
+}
+
+/*style the copy to clipboard button in the colourpicker page*/
+#colourpicker-clipbtn {
+    color: #1d89ff;
+    border-color: #1d89ff;
+    border-radius: 17px;
+    margin-bottom: 3px;
+    background-color: white;
+    height: 33px;
+    width: 100px;
+}
+
+/*style the copy to clipboard button in the plot pages page*/
+#clipbtn {
+    color: #1d89ff;
+    border-color: #1d89ff;
+    border-radius: 17px;
+    margin-bottom: 3px;
+    background-color: white;
+    height: 33px;
+    width: 100px;
+}
+
+/*orient the clip button on plot pages*/
+.clipb {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/*style the wellpanel on the homepage*/
+#homewell {
+  font-size: 20px;
+  background-color: #EFF4FC;
+  color: #051C43;
+}
+
+/*style the explanation of colour blind options in the colourpicker page*/
+div#col_explain {
+    color: white;
+    font-size: 12px;
+}
